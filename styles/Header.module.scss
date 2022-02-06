@@ -1,0 +1,56 @@
+@import "./_variables.scss";
+
+.header {
+  background-image: url("../public/header/header-bg.png");
+  width: 100vw;
+  height: 100vh;
+  //   max-height: 1080px;
+}
+.container {
+  max-width: 1170px;
+  //   height: 100px;
+}
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  color: $textDark;
+  font-size: 1.25rem;
+  transition: 0.2s ease-in;
+  &:hover {
+    color: $mainViolet;
+  }
+}
+.button {
+  width: 180px;
+  height: 48px;
+  background: transparent;
+  border: 2px solid $mainViolet;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s ease-in;
+  &:hover {
+    background: $mainViolet;
+    border: none;
+    color: $textLight;
+  }
+}
+.icon {
+  font-size: 1.5rem;
+  transition: 0.2s ease-in;
+
+  &__fb {
+    color: $iconFacebook;
+  }
+  &__tw {
+    color: $iconTwitter;
+  }
+  &__yt {
+    color: $iconYoutube;
+  }
+  &__in {
+    color: $iconInstagram;
+  }
+  &:hover {
+    color: $mainViolet;
+  }
+}
