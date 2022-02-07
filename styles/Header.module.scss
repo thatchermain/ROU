@@ -1,10 +1,12 @@
 @import "./_variables.scss";
 
 .header {
-  background-image: url("../public/header/header-bg.png");
+  background: url("../public/header/header-bg.png");
+  background-position: center center;
+  background-size: cover;
   width: 100vw;
-  height: 100vh;
-  //   max-height: 1080px;
+  // height: 100vh;
+  // height: 1080px;
 }
 .container {
   max-width: 1170px;
@@ -52,5 +54,28 @@
   }
   &:hover {
     color: $mainViolet;
+  }
+}
+.h1 {
+  font-size: clamp(2rem, 4vw, 5rem);
+  font-weight: bold;
+  color: $textDark;
+}
+.h4 {
+  font-size: clamp(1.25rem, 2vw, 2rem);
+  color: $textDisabled;
+}
+.heroBtn {
+  width: 240px;
+  height: 70px;
+  background-color: $mainViolet;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: $textLight;
+  transition: 0.2s ease-in;
+  &:hover {
+    background: $mainViolet;
+    transform: scale(1.2);
   }
 }

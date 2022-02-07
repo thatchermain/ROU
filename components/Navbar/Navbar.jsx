@@ -6,12 +6,12 @@ import styles from "../../styles/Header.module.scss";
 const Navbar = () => {
   return (
     <div>
-      <div className={`${styles.container} container`}>
+      <div className={`${styles.container} container `}>
         <Row className="p-4 d-flex align-items-center">
           <Col className="logo p-0 d-flex align-items-center" lg={2}>
             <Image src={Logo} alt="Logo" max-width={120} max-height={36} />
           </Col>
-          <Col className="d-block" lg={8}>
+          <Col className="d-lg-block d-none" lg={8}>
             <ul className="m-0 d-flex justify-content-between align-items-center">
               <Link href="./">
                 <a className={styles.link}>Home</a>
@@ -34,7 +34,7 @@ const Navbar = () => {
               <button className={styles.button}>Get A Quote</button>
             </ul>
           </Col>
-          <Col className="d-block" lg={2}>
+          <Col className="d-lg-block d-none" lg={2}>
             <ul className="m-0 px-2 d-flex justify-content-between align-items-center">
               <Link href="./">
                 <a className="px-1">
