@@ -1,0 +1,26 @@
+@import "./variables";
+.h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 800;
+}
+.h6 {
+  font-size: clamp(1rem, 1vw, 1.5rem);
+  color: $textDisabled;
+}
+.paragraph {
+  color: $textDisabled;
+}
+.button {
+  width: 240px;
+  height: 70px;
+  background-color: $mainViolet;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: $textLight;
+  transition: 0.2s ease-in;
+  &:hover {
+    background: $mainViolet;
+    transform: scale(1.12);
+  }
+}

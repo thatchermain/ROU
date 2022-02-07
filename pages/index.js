@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "../components/Header/Header";
 import Image from "next/image";
 import Intro from "../components/Intro/Intro";
+import About from "../components/About/About";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       </Head>
       <Header />
       <Intro />
+      <About />
     </div>
   );
 }
