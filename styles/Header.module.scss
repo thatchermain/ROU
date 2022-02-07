@@ -58,11 +58,14 @@
 }
 .h1 {
   font-size: clamp(2rem, 4vw, 5rem);
-  font-weight: bold;
+  font-family: "Overpass";
+  font-weight: 800;
   color: $textDark;
 }
 .h4 {
   font-size: clamp(1.25rem, 2vw, 2rem);
+  font-family: "Roboto";
+  font-weight: 400;
   color: $textDisabled;
 }
 .heroBtn {

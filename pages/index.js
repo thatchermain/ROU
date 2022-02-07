@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "../components/Header/Header";
 import Image from "next/image";
+import Intro from "../components/Intro/Intro";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         ></link>
       </Head>
       <Header />
+      <Intro />
     </div>
   );
 }
