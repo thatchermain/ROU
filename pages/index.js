@@ -7,6 +7,7 @@ import Service from "../components/Service/Service";
 import Projects from "../components/Projects/Projects";
 import Team from "../components/Team/Team";
 import Testimonials from "../components/Testimonials/Testimonials";
+import Contact from "../components/Contact/Contact";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
       <Projects />
       <Team />
       <Testimonials />
+      <Contact />
     </div>
   );
 }
