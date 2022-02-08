@@ -1,0 +1,29 @@
+@import "./variables";
+
+.card {
+  border-top: 2px solid $mainViolet;
+  border-left: 2px solid $mainViolet;
+  border-radius: 10px;
+  //   box-shadow: 5px 5px 10px $mainViolet;
+}
+.h3 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-family: "Overpass";
+  font-weight: 800;
+  color: $mainViolet;
+  text-transform: uppercase;
+}
+.h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-family: "Overpass";
+  font-weight: 800;
+}
+.h5 {
+  font-weight: bold;
+}
+.paragraph {
+  color: $textDisabled;
+}
+.span {
+  color: $textDisabled;
+}
