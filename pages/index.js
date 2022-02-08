@@ -3,6 +3,7 @@ import Header from "../components/Header/Header";
 import Image from "next/image";
 import Intro from "../components/Intro/Intro";
 import About from "../components/About/About";
+import Service from "../components/Service/Service";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <Header />
       <Intro />
       <About />
+      <Service />
     </div>
   );
 }
