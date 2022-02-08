@@ -1,12 +1,13 @@
 @import "./variables";
 
 .h2 {
-  font-size: clamp(2rem, 3vw, 3rem);
-  font-weight: 800;
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
-.h6 {
-  font-size: clamp(1rem, 1vw, 1.5rem);
+.h3 {
+  font-size: clamp(1.25rem, 1.5vw, 1.75rem);
+  font-weight: 800;
   color: $textDisabled;
+  color: $mainViolet;
 }
 .paragraph {
   color: $textDisabled;

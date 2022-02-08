@@ -15,3 +15,21 @@
   font-family: "Overpass";
   font-weight: 800;
 }
+.image {
+  cursor: pointer;
+  &__pink {
+    :hover {
+      box-shadow: 30px 30px 30px rgba($projectPink, 0.4);
+    }
+  }
+  &__blue {
+    :hover {
+      box-shadow: -30px 30px 30px rgba($projectBlue, 0.4);
+    }
+  }
+  &__yellow {
+    :hover {
+      box-shadow: 30px 30px 30px rgba($projectYellow, 0.4);
+    }
+  }
+}

@@ -18,12 +18,16 @@ const Projects = () => {
       </div>
       <div className="container-xl  py-5 mt-5 ">
         <Row className="d-flex justify-content-center align-items-center py-5">
-          <Col md={6}>
+          <Col
+            sm={6}
+            className={`${styles.image} ${styles.image__pink} mx-auto`}
+          >
             <Image src={Pink} alt="" />
           </Col>
           <Col md={6}>
             <ProjectInfoCard
               title={"Development"}
+              color={"styles.pink"}
               description={
                 "Laudantiumrerum corrupti officiis ea nesciunt eligendi quos eius voluptatibus quod. Consequuntur."
               }
@@ -40,13 +44,19 @@ const Projects = () => {
               }
             />
           </Col>
-          <Col md={6}>
+          <Col
+            sm={6}
+            className={`${styles.image} ${styles.image__blue} mx-auto`}
+          >
             <Image src={Blue} alt="" />
           </Col>
         </Row>
         <hr></hr>
         <Row className="d-flex justify-content-center align-items-center py-5">
-          <Col md={6}>
+          <Col
+            sm={6}
+            className={`${styles.image} ${styles.image__yellow} mx-auto `}
+          >
             <Image src={Yellow} alt="" />
           </Col>
           <Col md={6}>
