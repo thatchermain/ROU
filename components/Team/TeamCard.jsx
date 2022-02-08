@@ -16,21 +16,21 @@ const TeamCard = (props) => {
         <div
           className={`${styles.overlay} d-flex flex-column justify-content-around`}
         >
-          <Link href="./">
+          <Link href="/">
             <a className="px-1">
               <i
                 className={`bi bi-facebook ${styles.icon} ${styles.icon__in}`}
               ></i>
             </a>
           </Link>
-          <Link href="./">
+          <Link href="/">
             <a className="px-1">
               <i
                 className={`bi bi-instagram ${styles.icon} ${styles.icon__in}`}
               ></i>
             </a>
           </Link>
-          <Link href="./">
+          <Link href="/">
             <a className="px-1">
               <i
                 className={`bi bi-twitter ${styles.icon} ${styles.icon__in}`}

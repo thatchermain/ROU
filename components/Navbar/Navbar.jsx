@@ -5,7 +5,7 @@ import Logo from "../../public/header/navbar-logo.png";
 import styles from "../../styles/Header.module.scss";
 const Navbar = () => {
   return (
-    <div>
+    <nav>
       <div className={`${styles.container} container `}>
         <Row className="p-4 d-flex align-items-center">
           <Col className="logo p-0 d-flex align-items-center" lg={2}>
@@ -13,22 +13,22 @@ const Navbar = () => {
           </Col>
           <Col className="d-lg-block d-none" lg={8}>
             <ul className="m-0 d-flex justify-content-between align-items-center">
-              <Link href="./">
+              <Link href="/">
                 <a className={styles.link}>Home</a>
               </Link>
-              <Link href="./">
+              <Link href="/">
                 <a className={styles.link}>About</a>
               </Link>
-              <Link href="./">
+              <Link href="/">
                 <a className={styles.link}>Service</a>
               </Link>
-              <Link href="./">
+              <Link href="/">
                 <a className={styles.link}>Works</a>
               </Link>
-              <Link href="./">
+              <Link href="/">
                 <a className={styles.link}>News</a>
               </Link>
-              <Link href="./">
+              <Link href="/">
                 <a className={styles.link}>Contact</a>
               </Link>
               <button className={styles.button}>Get A Quote</button>
@@ -36,28 +36,28 @@ const Navbar = () => {
           </Col>
           <Col className="d-lg-block d-none" lg={2}>
             <ul className="m-0 px-2 d-flex justify-content-between align-items-center">
-              <Link href="./">
+              <Link href="/">
                 <a className="px-1">
                   <i
                     className={`bi bi-facebook ${styles.icon} ${styles.icon__fb}`}
                   ></i>
                 </a>
               </Link>
-              <Link href="./">
+              <Link href="/">
                 <a className="px-1">
                   <i
                     className={`bi bi-twitter ${styles.icon} ${styles.icon__tw}`}
                   ></i>
                 </a>
               </Link>
-              <Link href="./">
+              <Link href="/">
                 <a className="px-1">
                   <i
                     className={`bi bi-youtube ${styles.icon} ${styles.icon__yt}`}
                   ></i>
                 </a>
               </Link>
-              <Link href="./">
+              <Link href="/">
                 <a className="px-1">
                   <i
                     className={`bi bi-instagram ${styles.icon} ${styles.icon__in}`}
@@ -68,7 +68,7 @@ const Navbar = () => {
           </Col>
         </Row>
       </div>
-    </div>
+    </nav>
   );
 };
 

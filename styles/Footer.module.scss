@@ -1,0 +1,34 @@
+@import "./variables";
+
+.info {
+}
+.infoTitle {
+  font-weight: bold;
+}
+.infoLink {
+  text-decoration: none;
+  color: $textDisabled;
+  &:hover {
+    color: $mainViolet;
+  }
+}
+.icon {
+  font-size: 1.5rem;
+  transition: 0.2s ease-in;
+
+  &__fb {
+    color: $iconFacebook;
+  }
+  &__tw {
+    color: $iconTwitter;
+  }
+  &__yt {
+    color: $iconYoutube;
+  }
+  &__in {
+    color: $iconInstagram;
+  }
+  &:hover {
+    color: $mainViolet;
+  }
+}
