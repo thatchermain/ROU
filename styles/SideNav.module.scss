@@ -11,6 +11,13 @@
   height: 100vh;
   background-color: $textDark;
 }
+.menuBar {
+  position: fixed;
+  height: 80px;
+  background-color: $textLight;
+  border-bottom: 1px solid $mainViolet;
+  z-index: 2;
+}
 .link {
   text-decoration: none;
   font-size: 2rem;

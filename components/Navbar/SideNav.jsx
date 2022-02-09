@@ -2,19 +2,34 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import Logo from "../../public/header/navbar-logo.png";
-import { Container, Navbar, Offcanvas } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import styles from "../../styles/SideNav.module.scss";
 
 const SideNav = () => {
   const [visible, setVisible] = useState(false);
   return (
     <div>
-      <i
-        className={`${styles.openIcon} bi bi-menu-down p-3`}
-        onClick={() => {
-          setVisible(true);
-        }}
-      ></i>
+      <Row className="">
+        <div
+          className={`${styles.menuBar} d-flex justify-content-between align-items-center`}
+        >
+          <div>
+            <i
+              className={`${styles.openIcon} bi bi-menu-down p-3`}
+              onClick={() => {
+                setVisible(true);
+              }}
+            ></i>
+          </div>
+          <Image
+            src={Logo}
+            alt="Logo"
+            max-width={120}
+            max-height={36}
+            className="text-center"
+          />
+        </div>
+      </Row>
       <aside
         className={`d-block d-lg-none ${styles.navbar} ${
           !visible ? styles.hidden : ""
@@ -104,7 +119,7 @@ const SideNav = () => {
           </ul>
           <hr />
           <ul className="m-0 px-2 d-flex justify-content-between align-items-center">
-            <Link href="/">
+            <Link href="/facebook">
               <a
                 className="px-1"
                 onClick={() => {
@@ -116,7 +131,7 @@ const SideNav = () => {
                 ></i>
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/twitter">
               <a
                 className="px-1"
                 onClick={() => {
@@ -128,7 +143,7 @@ const SideNav = () => {
                 ></i>
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/youtube">
               <a
                 className="px-1"
                 onClick={() => {
@@ -140,7 +155,7 @@ const SideNav = () => {
                 ></i>
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/instagram">
               <a
                 className="px-1"
                 onClick={() => {

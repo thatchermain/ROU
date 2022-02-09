@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import styles from "../../styles/Tsetimonials.module.scss";
 import TestimonialCard from "./TestimonialCard";
 
 const Testimonials = (props) => {

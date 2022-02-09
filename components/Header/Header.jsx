@@ -11,8 +11,8 @@ const Header = () => {
     <div className={`${styles.header} `}>
       <Navbar />
       <SideNav />
-      <div className={`${styles.hero}  mt-5 `}>
-        <Row className="text-center">
+      <div className={`${styles.hero}  mt-5 pt-5 `}>
+        <Row className="text-center pt-5 mt-5">
           <Col
             className="d-flex flex-column justify-content-evenly align-items-center mx-auto px-5 py-5"
             xl={5}
@@ -38,7 +38,7 @@ const Header = () => {
             lg={6}
             sm={8}
           >
-            <div className="py-5 my-5">
+            <div className="">
               <Image
                 src={Hero}
                 alt="Hero"

@@ -11,9 +11,9 @@ const Projects = () => {
   return (
     <section id="work" className="pt-5">
       <div className={`${styles.wrapper} mx-auto`}>
-        <h4 className={`${styles.h4}  text-center py-5`}>what we do</h4>
+        <h4 className={`${styles.h4}  text-center py-5`}>our projects</h4>
         <h1 className={`${styles.h1}  text-center `}>
-          Service to solve all kind of business problems
+          Check the real innovation of problem solving
         </h1>
       </div>
       <div className="container-xl  py-5 mt-5 ">

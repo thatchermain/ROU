@@ -1,7 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import styles from "../../styles/Service.module.scss";
-
 import Camera from "../../public/service/camera.png";
 import Cart from "../../public/service/cart.png";
 import Phones from "../../public/service/phones.png";
