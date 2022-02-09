@@ -1,3 +1,4 @@
+@import "./variables";
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,4 +8,45 @@ html,
 body {
   font-family: "Overpass", sans-serif;
   overflow-x: hidden;
+}
+
+h4 {
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-family: "Overpass";
+  font-weight: 800;
+  color: $mainViolet;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: clamp(2rem, 4vw, 5rem);
+  font-family: "Overpass";
+  font-weight: 800;
+}
+.fullButton {
+  width: 240px;
+  height: 70px;
+  background-color: $mainViolet;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: $textLight;
+  transition: 0.2s ease-in;
+  &:hover {
+    background: $mainViolet;
+    transform: scale(1.12);
+  }
+}
+.emptyButton {
+  width: 180px;
+  height: 48px;
+  background: transparent;
+  border: 2px solid $mainViolet;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s ease-in;
+  &:hover {
+    background: $mainViolet;
+    border: none;
+    color: $textLight;
+  }
 }

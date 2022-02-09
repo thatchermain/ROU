@@ -11,10 +11,10 @@ const Header = () => {
     <div className={`${styles.header} `}>
       <Navbar />
       <SideNav />
-      <div className={`${styles.hero}  mt-5 pt-5 `}>
-        <Row className="text-center pt-5 mt-5">
+      <div className={`${styles.hero}  mt-5 pt-5 container`}>
+        <Row className="text-center pt-5 mt-lg-5">
           <Col
-            className="d-flex flex-column justify-content-evenly align-items-center mx-auto px-5 py-5"
+            className="d-flex flex-column justify-content-evenly align-items-center mx-auto  py-5"
             xl={5}
             lg={6}
             md={8}
@@ -22,18 +22,18 @@ const Header = () => {
             <h1 className={`${styles.h1}`}>
               Work Smart with Endless Possibilities
             </h1>
-            <h4 className={`${styles.h4} my-4 my-lg-0`}>
+            <h5 className={`${styles.h5} my-4 my-lg-5 py-3`}>
               Consectetur adipisicing elit. Similique hic assumenda molestias
               provident.{" "}
-            </h4>
+            </h5>
             <Link href="#about">
               <a className={styles.link}>
-                <button className={styles.heroBtn}>Get Started</button>
+                <button className="fullButton">Get Started</button>
               </a>
             </Link>
           </Col>
           <Col
-            className={`${styles.image} mx-auto py-5 py-lg-0`}
+            className={`${styles.image} mx-auto py-5 py-lg-5 my-lg-5`}
             xl={7}
             lg={6}
             sm={8}
@@ -41,7 +41,7 @@ const Header = () => {
             <div className="">
               <Image
                 src={Hero}
-                alt="Hero"
+                alt="Hero picture"
                 layout="responsive"
                 objectFit="contain"
               />

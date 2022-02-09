@@ -6,10 +6,11 @@
   height: 100vh;
   min-width: 360px;
   z-index: 1000;
+  transition: 0.4s ease-in-out;
 }
 .sidenav {
   height: 100vh;
-  background-color: $textDark;
+  background-color: $textLight;
 }
 .menuBar {
   position: fixed;
@@ -20,26 +21,15 @@
 }
 .link {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: capitalize;
-  color: $textLight;
+  color: $textDark;
   &:hover {
-    color: $mainViolet;
+    color: $textLight;
+    background-color: rgba($mainViolet, 0.6);
   }
 }
-.button {
-  width: 240px;
-  height: 70px;
-  background-color: $mainViolet;
-  border-radius: 10px;
-  font-weight: bold;
-  color: $textLight;
-  &:hover {
-    color: $mainViolet;
-    background: transparent;
-    border: 2px solid $mainViolet;
-  }
-}
+
 .icon {
   font-size: 3rem;
   transition: 0.2s ease-in;
@@ -76,4 +66,5 @@
 }
 .hidden {
   transform: translate(-100%, 0);
+  transition: 0.4s ease-in-out;
 }

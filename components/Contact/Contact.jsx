@@ -38,11 +38,7 @@ const Contact = () => {
                   placeholder="Message..."
                 />
               </Form.Group>
-              <Button
-                variant="primary"
-                type="submit"
-                className={styles.formBtn}
-              >
+              <Button variant="primary" type="submit" className="fullButton">
                 Submit
               </Button>
             </Form>

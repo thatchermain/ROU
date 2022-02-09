@@ -104,7 +104,7 @@ const SideNav = () => {
                 Contact
               </a>
             </Link>
-            <button className={styles.button}>
+            <button className="fullButton">
               <Link href={"#contact"}>
                 <a
                   className={`${styles.link} py-1`}

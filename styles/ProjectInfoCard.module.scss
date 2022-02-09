@@ -12,17 +12,3 @@
 .paragraph {
   color: $textDisabled;
 }
-.button {
-  width: 180px;
-  height: 48px;
-  background: transparent;
-  border: 2px solid $mainViolet;
-  border-radius: 10px;
-  font-weight: bold;
-  transition: 0.2s ease-in;
-  &:hover {
-    background: $mainViolet;
-    border: none;
-    color: $textLight;
-  }
-}

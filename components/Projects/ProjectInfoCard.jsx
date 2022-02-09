@@ -10,7 +10,7 @@ const ProjectInfoCard = (props) => {
         harum accusamus blanditiis, architecto voluptatem ad numquam laudantium
         tempora quae veritatis alias ullam dolores sapiente?
       </p>
-      <button className={`${styles.button} my-3`}>View Project</button>
+      <button className={`emptyButton my-3`}>View Project</button>
     </div>
   );
 };

@@ -26,7 +26,7 @@ const About = () => {
             </p>
             <Link href="#team">
               <a className={styles.link}>
-                <button className={`${styles.button} py-2`}>KNOW MORE</button>
+                <button className={`fullButton py-2`}>KNOW MORE</button>
               </a>
             </Link>
           </div>
@@ -34,10 +34,10 @@ const About = () => {
         <Col>
           <div className={`${styles.wrapper} d-flex align-items-between`}>
             <div className="pb-0 pb-lg-5 mb-0 mb-lg-5 ">
-              <Image src={Left} alt="Hero" objectFit="contain" />
+              <Image src={Left} alt="Old clock" objectFit="contain" />
             </div>
             <div className="pt-0 pt-lg-5 mt-0 mt-lg-5">
-              <Image src={Right} alt="Hero" objectFit="contain" />
+              <Image src={Right} alt="Group of people" objectFit="contain" />
             </div>
           </div>
         </Col>

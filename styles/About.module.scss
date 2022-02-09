@@ -10,17 +10,3 @@
 .paragraph {
   color: $textDisabled;
 }
-.button {
-  width: 240px;
-  height: 70px;
-  background-color: $mainViolet;
-  border: none;
-  border-radius: 10px;
-  font-weight: bold;
-  color: $textLight;
-  transition: 0.2s ease-in;
-  &:hover {
-    background: $mainViolet;
-    transform: scale(1.12);
-  }
-}

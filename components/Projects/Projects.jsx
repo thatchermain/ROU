@@ -10,7 +10,7 @@ import Image from "next/image";
 const Projects = () => {
   return (
     <section id="work" className="pt-5">
-      <div className={`${styles.wrapper} mx-auto`}>
+      <div className={`${styles.wrapper} mx-auto container`}>
         <h4 className={`${styles.h4}  text-center py-5`}>our projects</h4>
         <h1 className={`${styles.h1}  text-center `}>
           Check the real innovation of problem solving
@@ -22,7 +22,7 @@ const Projects = () => {
             sm={6}
             className={`${styles.image} ${styles.image__pink} mx-auto`}
           >
-            <Image src={Pink} alt="" />
+            <Image src={Pink} alt="Cactus in a pot" />
           </Col>
           <Col md={6}>
             <ProjectInfoCard
@@ -48,7 +48,7 @@ const Projects = () => {
             sm={6}
             className={`${styles.image} ${styles.image__blue} mx-auto`}
           >
-            <Image src={Blue} alt="" />
+            <Image src={Blue} alt="An orange" />
           </Col>
         </Row>
         <hr></hr>
@@ -57,7 +57,7 @@ const Projects = () => {
             sm={6}
             className={`${styles.image} ${styles.image__yellow} mx-auto `}
           >
-            <Image src={Yellow} alt="" />
+            <Image src={Yellow} alt="Old phone" />
           </Col>
           <Col md={6}>
             <ProjectInfoCard

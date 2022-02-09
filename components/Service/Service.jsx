@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import styles from "../../styles/Service.module.scss";
 import Camera from "../../public/service/camera.png";
 import Cart from "../../public/service/cart.png";
 import Phones from "../../public/service/phones.png";
@@ -11,10 +10,10 @@ import Card from "./Card";
 const Service = () => {
   return (
     <div>
-      <section id="services" className={`${styles.services}  pt-5`}>
-        <div className={`${styles.wrapper} mx-auto`}>
-          <h4 className={`${styles.h4}  text-center py-5`}>what we do</h4>
-          <h1 className={`${styles.h1}  text-center `}>
+      <section id="services" className="pt-5">
+        <div className={`mx-auto container`}>
+          <h4 className={`text-center py-5`}>what we do</h4>
+          <h1 className={`text-center `}>
             Service to solve all kind of business problems
           </h1>
         </div>

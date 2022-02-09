@@ -33,7 +33,7 @@ const Navbar = () => {
               </Link>
               <Link href="#contact">
                 <a className={styles.link}>
-                  <button className={styles.button}>Get a quote</button>
+                  <button className="emptyButton">Get a quote</button>
                 </a>
               </Link>
             </ul>

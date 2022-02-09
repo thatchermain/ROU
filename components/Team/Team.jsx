@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import styles from "../../styles/Team.module.scss";
 import TeamCard from "./TeamCard";
 import Ceo from "../../public/team/ceo.png";
 import Manager from "../../public/team/manager.png";
@@ -9,9 +8,9 @@ import Designer from "../../public/team/designer.png";
 const Team = () => {
   return (
     <section id="team" className="pt-5">
-      <div className={`${styles.wrapper} mx-auto `}>
-        <h4 className={`${styles.h4}  text-center py-5`}>meet our team</h4>
-        <h1 className={`${styles.h1}  text-center `}>
+      <div className={`mx-auto container`}>
+        <h4 className={`text-center py-5`}>meet our team</h4>
+        <h1 className={`text-center `}>
           Awesome people with great business skills
         </h1>
       </div>

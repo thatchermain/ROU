@@ -16,7 +16,7 @@ const NotFound = () => {
         </h3>
         <Link href="/">
           <a>
-            <button className={styles.button}>Home Page</button>
+            <button className="fullButton">Home Page</button>
           </a>
         </Link>
       </div>
