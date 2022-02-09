@@ -3,9 +3,10 @@ import styles from "../../styles/About.module.scss";
 import Left from "../../public/about/left.png";
 import Right from "../../public/about/right.png";
 import Image from "next/image";
+import Link from "next/link";
 const About = () => {
   return (
-    <section className="container p-5">
+    <section className="container p-5" id="about">
       <Row className="d-flex justify-content-between align-items-center">
         <Col lg={5}>
           <div
@@ -23,7 +24,11 @@ const About = () => {
               repellendus sunt quidem suscipit, harum fuga non distinctio
               accusantium culpa voluptatem blanditiis vel.
             </p>
-            <button className={`${styles.button} py-2`}>KNOW MORE</button>
+            <Link href="#team">
+              <a className={styles.link}>
+                <button className={`${styles.button} py-2`}>KNOW MORE</button>
+              </a>
+            </Link>
           </div>
         </Col>
         <Col>

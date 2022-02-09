@@ -4,10 +4,13 @@ import Image from "next/image";
 import Navbar from "../Navbar/Navbar";
 import styles from "../../styles/Header.module.scss";
 import Hero from "../../public/header/hero.png";
+import SideNav from "../Navbar/SideNav";
+import Link from "next/link";
 const Header = () => {
   return (
     <div className={`${styles.header} `}>
       <Navbar />
+      <SideNav />
       <div className={`${styles.hero}  mt-5 `}>
         <Row className="text-center">
           <Col
@@ -23,7 +26,11 @@ const Header = () => {
               Consectetur adipisicing elit. Similique hic assumenda molestias
               provident.{" "}
             </h4>
-            <button className={styles.heroBtn}>Get Started</button>
+            <Link href="#about">
+              <a className={styles.link}>
+                <button className={styles.heroBtn}>Get Started</button>
+              </a>
+            </Link>
           </Col>
           <Col
             className={`${styles.image} mx-auto py-5 py-lg-0`}
@@ -31,7 +38,7 @@ const Header = () => {
             lg={6}
             sm={8}
           >
-            <div className="">
+            <div className="py-5 my-5">
               <Image
                 src={Hero}
                 alt="Hero"

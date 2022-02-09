@@ -6,7 +6,7 @@ import user from "../../public/intro/user.png";
 import Image from "next/image";
 const Intro = () => {
   return (
-    <section className={`${styles.intro}  pt-5`}>
+    <section className={`${styles.intro}  pt-5`} id="about">
       <div className={`${styles.wrapper} mx-auto`}>
         <h4 className={`${styles.h4}  text-center py-5`}>build trust first</h4>
         <h1 className={`${styles.h1}  text-center `}>

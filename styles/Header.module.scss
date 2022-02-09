@@ -1,10 +1,17 @@
 @import "./_variables.scss";
 
+.nav {
+  position: fixed;
+  top: 0;
+  background-color: $textLight;
+  width: 100%;
+  z-index: 1000;
+}
 .header {
   // background: url("../public/header/header-bg.png");
   // background-position: center center;
   // background-size: cover;
-  width: 100vw;
+  // width: 100vw;
   // height: 100vh;
   // height: 1080px;
 }

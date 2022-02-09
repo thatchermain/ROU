@@ -8,8 +8,8 @@ import Developer from "../../public/team/developer.png";
 import Designer from "../../public/team/designer.png";
 const Team = () => {
   return (
-    <section>
-      <div className={`${styles.wrapper} mx-auto pb-5`}>
+    <section id="team" className="pt-5">
+      <div className={`${styles.wrapper} mx-auto `}>
         <h4 className={`${styles.h4}  text-center py-5`}>meet our team</h4>
         <h1 className={`${styles.h1}  text-center `}>
           Awesome people with great business skills

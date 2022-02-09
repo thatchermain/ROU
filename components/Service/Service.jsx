@@ -12,7 +12,7 @@ import Card from "./Card";
 const Service = () => {
   return (
     <div>
-      <section className={`${styles.services}  pt-5`}>
+      <section id="services" className={`${styles.services}  pt-5`}>
         <div className={`${styles.wrapper} mx-auto`}>
           <h4 className={`${styles.h4}  text-center py-5`}>what we do</h4>
           <h1 className={`${styles.h1}  text-center `}>

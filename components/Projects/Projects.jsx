@@ -9,7 +9,7 @@ import ProjectInfoCard from "./ProjectInfoCard";
 import Image from "next/image";
 const Projects = () => {
   return (
-    <section>
+    <section id="work" className="pt-5">
       <div className={`${styles.wrapper} mx-auto`}>
         <h4 className={`${styles.h4}  text-center py-5`}>what we do</h4>
         <h1 className={`${styles.h1}  text-center `}>

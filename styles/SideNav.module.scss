@@ -1,0 +1,72 @@
+@import "./variables";
+
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  min-width: 360px;
+  z-index: 1000;
+}
+.sidenav {
+  height: 100vh;
+  background-color: $textDark;
+}
+.link {
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: $textLight;
+  &:hover {
+    color: $mainViolet;
+  }
+}
+.button {
+  width: 240px;
+  height: 70px;
+  background-color: $mainViolet;
+  border-radius: 10px;
+  font-weight: bold;
+  color: $textLight;
+  &:hover {
+    color: $mainViolet;
+    background: transparent;
+    border: 2px solid $mainViolet;
+  }
+}
+.icon {
+  font-size: 3rem;
+  transition: 0.2s ease-in;
+
+  &__fb {
+    color: $iconFacebook;
+  }
+  &__tw {
+    color: $iconTwitter;
+  }
+  &__yt {
+    color: $iconYoutube;
+  }
+  &__in {
+    color: $iconInstagram;
+  }
+  &:hover {
+    color: $mainViolet;
+  }
+}
+.openIcon {
+  position: fixed;
+  top: 0;
+  display: block;
+  color: $mainViolet;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.closeIcon {
+  display: block;
+  color: $mainViolet;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.hidden {
+  transform: translate(-100%, 0);
+}
