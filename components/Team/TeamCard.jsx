@@ -21,19 +21,18 @@ const TeamCard = (props) => {
         >
           <Link href="/facebook">
             <a className={`${styles.link} p-2`}>
-              <BsFacebook className={`${styles.icon} ${styles.icon__fb}`} />
+              <BsFacebook className={styles.icon} />
             </a>
           </Link>
+
           <Link href="/instagram">
             <a className={`${styles.link} p-2`}>
-              <BsInstagram className={`${styles.icon} ${styles.icon__in}`} />
+              <BsInstagram className={styles.icon} />
             </a>
           </Link>
           <Link href="/twitter">
             <a className={`${styles.link} p-2`}>
-              <a className="px-1">
-                <BsTwitter className={`${styles.icon} ${styles.icon__tw}`} />
-              </a>
+              <BsTwitter className={styles.icon} />
             </a>
           </Link>
         </div>
