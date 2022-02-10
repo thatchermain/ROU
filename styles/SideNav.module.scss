@@ -55,13 +55,16 @@
   top: 0;
   display: block;
   color: $mainViolet;
-  font-size: 3rem;
+  // font-size: 3rem;
+  width: 4rem;
+  height: 4rem;
   cursor: pointer;
 }
 .closeIcon {
   display: block;
   color: $mainViolet;
-  font-size: 3rem;
+  width: 4rem;
+  height: 4rem;
   cursor: pointer;
 }
 .hidden {

@@ -4,6 +4,14 @@ import React, { useState } from "react";
 import Logo from "../../public/header/navbar-logo.png";
 import { Row } from "react-bootstrap";
 import styles from "../../styles/SideNav.module.scss";
+import {
+  BsFacebook,
+  BsTwitter,
+  BsYoutube,
+  BsInstagram,
+  BsMenuUp,
+  BsBoxArrowLeft,
+} from "react-icons/bs";
 
 const SideNav = () => {
   const [visible, setVisible] = useState(false);
@@ -14,12 +22,12 @@ const SideNav = () => {
           className={`${styles.menuBar} d-flex justify-content-between align-items-center`}
         >
           <div>
-            <i
-              className={`${styles.openIcon} bi bi-menu-down p-3`}
+            <BsMenuUp
+              className={`${styles.openIcon} p-2 mt-2 ms-2`}
               onClick={() => {
                 setVisible(true);
               }}
-            ></i>
+            />
           </div>
           <Image
             src={Logo}
@@ -36,12 +44,14 @@ const SideNav = () => {
         }`}
       >
         <div className={styles.sidenav}>
-          <i
-            className={`${styles.closeIcon} bi bi-x-square p-3`}
-            onClick={() => {
-              setVisible(false);
-            }}
-          ></i>
+          <div>
+            <BsBoxArrowLeft
+              className={`${styles.closeIcon} p-2 mt-2 ms-2`}
+              onClick={() => {
+                setVisible(false);
+              }}
+            />
+          </div>
           <ul className="list-group p-3">
             <Link href={"/"}>
               <a
@@ -126,9 +136,7 @@ const SideNav = () => {
                   setVisible(false);
                 }}
               >
-                <i
-                  className={`bi bi-facebook ${styles.icon} ${styles.icon__fb}`}
-                ></i>
+                <BsFacebook className={`${styles.icon} ${styles.icon__fb}`} />
               </a>
             </Link>
             <Link href="/twitter">
@@ -138,9 +146,7 @@ const SideNav = () => {
                   setVisible(false);
                 }}
               >
-                <i
-                  className={`bi bi-twitter ${styles.icon} ${styles.icon__tw}`}
-                ></i>
+                <BsTwitter className={`${styles.icon} ${styles.icon__tw}`} />
               </a>
             </Link>
             <Link href="/youtube">
@@ -150,9 +156,7 @@ const SideNav = () => {
                   setVisible(false);
                 }}
               >
-                <i
-                  className={`bi bi-youtube ${styles.icon} ${styles.icon__yt}`}
-                ></i>
+                <BsYoutube className={`${styles.icon} ${styles.icon__yt}`} />
               </a>
             </Link>
             <Link href="/instagram">
@@ -162,9 +166,7 @@ const SideNav = () => {
                   setVisible(false);
                 }}
               >
-                <i
-                  className={`bi bi-instagram ${styles.icon} ${styles.icon__in}`}
-                ></i>
+                <BsInstagram className={`${styles.icon} ${styles.icon__in}`} />
               </a>
             </Link>
           </ul>
