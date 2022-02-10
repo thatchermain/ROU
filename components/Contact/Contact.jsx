@@ -6,7 +6,7 @@ const Contact = () => {
     <section id="contact" className="pt-5">
       <div className="container-lg">
         <div className={`${styles.wrapper} mx-auto `}>
-          <h4 className={`${styles.h4}  text-center py-5`}>contact us</h4>
+          <h4 className={`${styles.h4}  text-center py-5 mt-5`}>contact us</h4>
           <h1 className={`${styles.h1}  text-center `}>
             Stay connected with us for any reason
           </h1>

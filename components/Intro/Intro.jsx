@@ -8,7 +8,9 @@ const Intro = () => {
   return (
     <section className={`${styles.intro}  container pt-5`} id="about">
       <div className={`${styles.wrapper} mx-auto`}>
-        <h4 className={`${styles.h4}  text-center py-5`}>build trust first</h4>
+        <h4 className={`${styles.h4}  text-center py-5 mt-5`}>
+          build trust first
+        </h4>
         <h1 className={`${styles.h1}  text-center `}>
           Control Your business with a single tap
         </h1>
@@ -24,7 +26,7 @@ const Intro = () => {
           <div
             className={`${styles.card} ${styles.card__red} d-flex flex-column justify-content-center align-items-center p-2 p-sm-3`}
           >
-            <Image src={anchor} alt="anchor" max-width={120} max-height={36} />
+            <Image src={anchor} alt="anchor" width={88} height={88} />
             <h5 className={`${styles.h5} text-center p-3`}>
               Complete business control
             </h5>
@@ -42,12 +44,7 @@ const Intro = () => {
           <div
             className={`${styles.card} ${styles.card__green} d-flex flex-column justify-content-center align-items-center p-2 p-sm-3`}
           >
-            <Image
-              src={archive}
-              alt="archive"
-              max-width={120}
-              max-height={36}
-            />
+            <Image src={archive} alt="archive" width={88} height={88} />
             <h5 className={`${styles.h5} text-center p-3`}>
               Critical analitics
             </h5>
@@ -65,7 +62,7 @@ const Intro = () => {
           <div
             className={`${styles.card} ${styles.card__orange} d-flex flex-column justify-content-center align-items-center p-2 p-sm-3`}
           >
-            <Image src={user} alt="user" max-width={120} max-height={36} />
+            <Image src={user} alt="user" width={88} height={88} />
             <h5 className={`${styles.h5} text-center p-3`}>
               User satisfaction guaranteed
             </h5>

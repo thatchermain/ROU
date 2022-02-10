@@ -5,11 +5,11 @@ import Logo from "../../public/header/navbar-logo.png";
 import styles from "../../styles/Header.module.scss";
 const Navbar = () => {
   return (
-    <nav className={`${styles.nav} d-none d-lg-block`}>
+    <nav className={`${styles.nav} d-none d-lg-block `}>
       <div className={`${styles.container} container `}>
         <Row className="p-4 d-flex align-items-center">
           <Col className="logo p-0 d-flex align-items-center" lg={2}>
-            <Image src={Logo} alt="Logo" max-width={120} max-height={36} />
+            <Image src={Logo} alt="Logo" width={120} height={36} />
           </Col>
           <Col className="d-lg-block d-none" lg={8}>
             <ul className="m-0 d-flex justify-content-between align-items-center">

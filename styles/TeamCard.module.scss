@@ -7,11 +7,20 @@
   color: $mainViolet;
 }
 .card {
+  line-height: 100%;
   position: relative;
-  transform-style: preserve-3d;
   perspective: 1000px;
+  transition: 0.3s ease-in-out;
+  &:hover .overlay {
+    transform: translate(0, -100%);
+    opacity: 1;
+    transform: scale(1);
+  }
   &:hover .imageWrapper {
-    transform: rotateY(180deg);
+    opacity: 0.8;
+  }
+  &:hover .link {
+    background-color: rgba($mainViolet, 0.8);
   }
 }
 .imageWrapper {
@@ -19,19 +28,23 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
+  transition: 0.3s ease-in-out;
   transform-style: preserve-3d;
-  //   backface-visibility: hidden;
+  backface-visibility: hidden;
+  &:hover .overlay {
+    opacity: 1;
+  }
 }
 .overlay {
+  transition: 0.3s ease-in-out;
   border-radius: 15px;
   position: absolute;
   top: 0;
-  background: linear-gradient($iconFacebook, $mainViolet, $iconTwitter);
+  background-color: $mainViolet;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
+  opacity: 0;
+  transform: scale(0);
 }
 .icon {
   font-size: 3rem;

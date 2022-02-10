@@ -11,36 +11,38 @@ const TeamCard = (props) => {
         <Image
           src={props.src}
           alt={props.title}
+          width={270}
+          height={312}
           className={`${styles.image}`}
         />
         <div
           className={`${styles.overlay} d-flex flex-column justify-content-around`}
         >
-          <Link href="/">
-            <a className="px-1">
+          <Link href="/fabebook">
+            <a className={`${styles.link} p-2`}>
               <i
-                className={`bi bi-facebook ${styles.icon} ${styles.icon__in}`}
+                className={`bi bi-facebook ${styles.icon} ${styles.icon__in} p-2`}
               ></i>
             </a>
           </Link>
-          <Link href="/">
-            <a className="px-1">
+          <Link href="/instagram">
+            <a className={`${styles.link} p-2`}>
               <i
-                className={`bi bi-instagram ${styles.icon} ${styles.icon__in}`}
+                className={`bi bi-instagram ${styles.icon} ${styles.icon__in} p-2`}
               ></i>
             </a>
           </Link>
-          <Link href="/">
-            <a className="px-1">
+          <Link href="/twitter">
+            <a className={`${styles.link} p-2`}>
               <i
-                className={`bi bi-twitter ${styles.icon} ${styles.icon__in}`}
+                className={`bi bi-twitter ${styles.icon} ${styles.icon__in} p-2`}
               ></i>
             </a>
           </Link>
         </div>
       </div>
-      <h4 className={`${styles.name} text-center pt-4`}>{props.name}</h4>
-      <h4 className={`${styles.title} text-center pt-2`}>{props.title}</h4>
+      <h5 className={`${styles.name} text-center pt-4`}>{props.name}</h5>
+      <h5 className={`${styles.title} text-center pt-2`}>{props.title}</h5>
     </div>
   );
 };

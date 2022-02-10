@@ -11,18 +11,22 @@ const Projects = () => {
   return (
     <section id="work" className="pt-5">
       <div className={`${styles.wrapper} mx-auto container`}>
-        <h4 className={`${styles.h4}  text-center py-5`}>our projects</h4>
+        <h4 className={`${styles.h4}  text-center py-5 mt-5`}>our projects</h4>
         <h1 className={`${styles.h1}  text-center `}>
           Check the real innovation of problem solving
         </h1>
       </div>
       <div className="container-xl  py-5 mt-5 ">
         <Row className="d-flex justify-content-center align-items-center py-5">
-          <Col
-            sm={6}
-            className={`${styles.image} ${styles.image__pink} mx-auto`}
-          >
-            <Image src={Pink} alt="Cactus in a pot" />
+          <Col sm={6} className={`${styles.image} mx-auto`}>
+            <div className="d-flex justify-content-center align-items-center">
+              <Image
+                src={Pink}
+                alt="Cactus in a pot"
+                width={340}
+                height={340}
+              />
+            </div>
           </Col>
           <Col md={6}>
             <ProjectInfoCard
@@ -48,7 +52,9 @@ const Projects = () => {
             sm={6}
             className={`${styles.image} ${styles.image__blue} mx-auto`}
           >
-            <Image src={Blue} alt="An orange" />
+            <div className="d-flex justify-content-center align-items-center">
+              <Image src={Blue} alt="An orange" width={340} height={340} />
+            </div>
           </Col>
         </Row>
         <hr></hr>
@@ -57,7 +63,9 @@ const Projects = () => {
             sm={6}
             className={`${styles.image} ${styles.image__yellow} mx-auto `}
           >
-            <Image src={Yellow} alt="Old phone" />
+            <div className="d-flex justify-content-center align-items-center">
+              <Image src={Yellow} alt="Old phone" width={340} height={340} />
+            </div>
           </Col>
           <Col md={6}>
             <ProjectInfoCard

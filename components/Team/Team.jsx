@@ -9,7 +9,7 @@ const Team = () => {
   return (
     <section id="team" className="pt-5">
       <div className={`mx-auto container`}>
-        <h4 className={`text-center py-5`}>meet our team</h4>
+        <h4 className={`text-center py-5 mt-5`}>meet our team</h4>
         <h1 className={`text-center `}>
           Awesome people with great business skills
         </h1>

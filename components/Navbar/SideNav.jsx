@@ -24,8 +24,8 @@ const SideNav = () => {
           <Image
             src={Logo}
             alt="Logo"
-            max-width={120}
-            max-height={36}
+            width={120}
+            height={36}
             className="text-center"
           />
         </div>

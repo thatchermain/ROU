@@ -12,7 +12,7 @@ const About = () => {
           <div
             className={`${styles.wrapper} d-flex flex-column align-items-center my-5`}
           >
-            <h2 className={`${styles.h2} py-2`}>
+            <h2 className={`${styles.h2} py-2 `}>
               Most innovative creative team
             </h2>
             <h6 className={`${styles.h6} py-2`}>
@@ -34,10 +34,22 @@ const About = () => {
         <Col>
           <div className={`${styles.wrapper} d-flex align-items-between`}>
             <div className="pb-0 pb-lg-5 mb-0 mb-lg-5 ">
-              <Image src={Left} alt="Old clock" objectFit="contain" />
+              <Image
+                src={Left}
+                alt="Old clock"
+                objectFit="contain"
+                width={400}
+                height={400}
+              />
             </div>
             <div className="pt-0 pt-lg-5 mt-0 mt-lg-5">
-              <Image src={Right} alt="Group of people" objectFit="contain" />
+              <Image
+                src={Right}
+                alt="Group of people"
+                objectFit="contain"
+                width={400}
+                height={400}
+              />
             </div>
           </div>
         </Col>

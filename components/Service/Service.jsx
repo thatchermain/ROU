@@ -12,7 +12,7 @@ const Service = () => {
     <div>
       <section id="services" className="pt-5">
         <div className={`mx-auto container`}>
-          <h4 className={`text-center py-5`}>what we do</h4>
+          <h4 className={`text-center py-5 mt-5`}>what we do</h4>
           <h1 className={`text-center `}>
             Service to solve all kind of business problems
           </h1>

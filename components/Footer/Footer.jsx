@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="container">
         <Row className="mx-auto">
           <Col lg={4} md={6} className="p-5">
-            <Image src={Logo} alt="Logo"></Image>
+            <Image src={Logo} alt="Logo" width={120} height={36}></Image>
             <p className="py-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Doloremque, ut sint quasi ipsa, nobis mollitia excepturi dolores

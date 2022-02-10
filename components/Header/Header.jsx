@@ -42,8 +42,10 @@ const Header = () => {
               <Image
                 src={Hero}
                 alt="Hero picture"
-                layout="responsive"
-                objectFit="contain"
+                // layout="responsive"
+                // objectFit="contain"
+                width={860}
+                height={620}
               />
             </div>
           </Col>
