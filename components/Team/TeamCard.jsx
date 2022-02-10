@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 import styles from "../../styles/TeamCard.module.scss";
 const TeamCard = (props) => {
   return (
@@ -18,25 +19,21 @@ const TeamCard = (props) => {
         <div
           className={`${styles.overlay} d-flex flex-column justify-content-around`}
         >
-          <Link href="/fabebook">
+          <Link href="/facebook">
             <a className={`${styles.link} p-2`}>
-              <i
-                className={`bi bi-facebook ${styles.icon} ${styles.icon__in} p-2`}
-              ></i>
+              <BsFacebook className={`${styles.icon} ${styles.icon__fb}`} />
             </a>
           </Link>
           <Link href="/instagram">
             <a className={`${styles.link} p-2`}>
-              <i
-                className={`bi bi-instagram ${styles.icon} ${styles.icon__in} p-2`}
-              ></i>
+              <BsInstagram className={`${styles.icon} ${styles.icon__in}`} />
             </a>
           </Link>
           <Link href="/twitter">
             <a className={`${styles.link} p-2`}>
-              <i
-                className={`bi bi-twitter ${styles.icon} ${styles.icon__in} p-2`}
-              ></i>
+              <a className="px-1">
+                <BsTwitter className={`${styles.icon} ${styles.icon__tw}`} />
+              </a>
             </a>
           </Link>
         </div>
